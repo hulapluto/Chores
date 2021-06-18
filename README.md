@@ -5,6 +5,7 @@
 - error checking output to the DOM
 - date comparison function to change styles
 - localStorage
+- Bulma CSS
 #### Fixes ####
 - Refine date comparison
 - Add Edit functionality to each item
