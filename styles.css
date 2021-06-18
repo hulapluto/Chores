@@ -1,0 +1,30 @@
+.hero.is-primary.is-bold {
+  background: linear-gradient(to right, maroon 5%, #3f5efb)
+}
+.footer-text {
+  color: maroon;
+  font-weight: bold;
+}
+.chore-done {
+  text-align: right;
+}
+@media (max-width: 600px) {
+  .chore-done {
+    text-align: left;
+  }
+}
+.o-date {
+  color: #3f5efb;
+  font-weight: bold!important;
+}
+.o-date-behind {
+  color: crimson;
+  font-style: italic;
+  font-weight: bold!important;
+}
+
+hr {
+  margin: 0px 0px 1.5rem 0px;
+}
+
+section#output { margin-right: 4.5rem;}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chores VJS</title>
+</head>
+<body>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/js-datepicker/dist/datepicker.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <section class="hero is-primary is-small is-bold">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title is-1">Chores!</h1>
+        <h2 class="subtitle">Enter chore/task and reminder date</h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-three-quarters">
+          <div class="field is-vertical">
+            <div class="control">
+              <p class="control has-icons-left is-expanded">
+                <input class="input" type="task" placeholder="Chore/Task" id="chore">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-tasks"></i>
+                </span>
+              </p>
+              <p class="help is-danger" id="choreLabel"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+            <div class="field">
+              <div class="control has-icons-right">
+                <input class="input" placeholder="Select Date" id="setDate">
+                  <span class="icon is-small is-right">
+                    <i class="fas fa-calendar"></i>
+                  </span>
+              </div>
+              <p class="help is-danger" id="dateLabel"></p>
+            </div>
+        </div>
+        <div class="column">
+          <div class="control">
+              <button class="button is-link" id="addChore">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="output">
+  </section>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p class="footer-text">Don't procrastinate, finish them!</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/js-datepicker"></script>
+  <script src="chores.js"></script>
+  
+</body>
+</html>
